@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Director</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter for Apple-like typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --apple-bg: #F5F5F7;
+        --apple-blue: #0071e3;
+        --apple-text: #1d1d1f;
+        --apple-gray: #86868b;
+      }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--apple-bg);
+        color: var(--apple-text);
+        margin: 0;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+        "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
+        "jszip": "https://aistudiocdn.com/jszip@^3.10.1",
+        "file-saver": "https://aistudiocdn.com/file-saver@^2.0.5"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
